@@ -4,7 +4,7 @@ Small, read-only AWS audit script using boto3.
 
 Checks a handful of common AWS configuration issues that come up frequently in basic cloud security reviews. Intentionally scoped and not meant to be a full compliance tool.
 
----
+
 
 ## What it checks
 
@@ -25,7 +25,7 @@ Checks a handful of common AWS configuration issues that come up frequently in b
 
 Each check returns a simple PASS/FAIL result with basic context.
 
----
+
 
 ## What it isn't
 
@@ -34,18 +34,6 @@ Each check returns a simple PASS/FAIL result with basic context.
 
 This is a snapshot-style check meant for learning and demonstration.
 
----
-
-## Project layout
-
-aws-compliance-snapshot/
-├── main.py
-├── requirements.txt
-└── checks/
-├── iam_checks.py
-├── ec2_checks.py
-├── s3_checks.py
-└── cloudtrail_checks.py
 
 
 ## Requirements
@@ -55,7 +43,7 @@ aws-compliance-snapshot/
 - An AWS IAM user with ReadOnlyAccess
 - AWS credentials configured locally
 
----
+
 
 ## Usage
 
@@ -68,6 +56,7 @@ aws-compliance-snapshot/
     aws configure --profile compliance-audit
 
 **Run:**
+   
     python main.py
 
 
